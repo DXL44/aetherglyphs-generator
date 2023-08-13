@@ -37,7 +37,7 @@ text = str(input("Please enter the aetherglyphs to be turned into text!!!")).low
 # <size=10><line-height=4><cspace=-0.25em>
 aetherOutput = '<size=10><line-height=4><cspace=-0.25em>'
 
-for row in range (1,6):
+for row in range (0,5):
     for i in text:
         glyphLayer = aetherDictionary[i][row].replace("-","<alpha=#00>■<alpha=#ff>")
         aetherOutput = "".join([aetherOutput,glyphLayer])
